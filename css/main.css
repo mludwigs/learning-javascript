@@ -1,0 +1,38 @@
+/*~~~~~~~~~~~~~
+### GENERAL ###
+~~~~~~~~~~~~~*/
+
+.blue {
+	background-color: #92B1CD;
+	height: 100vh;
+}
+
+.green {
+	background-color: #8DC63f;
+	height: 100vh;
+}
+
+.main {
+	width: 100%;
+	text-align: center;
+	margin: 0px auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: #f5f5f5;
+	margin-top: 25vh;
+	margin-bottom: 10vh;
+	font-size: 5em;
+	font-weight: 700;
+}
+
+#clickMe {
+	margin-bottom: 33vh;
+	text-decoration: none;
+	color: #f5f5f5;
+	font-size: 3em;
+	font-weight: 400;
+	padding: 10px 10px;
+	border: 1px solid #f5f5f5;
+}
