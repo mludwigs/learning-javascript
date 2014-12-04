@@ -6,7 +6,6 @@ window.onload = function() {
 		document.getElementById("changeMe").innerHTML = ("hi there, " + uMessage + ".");
 		document.getElementById("clickMe").id = "clicked";
 		document.getElementById("clicked").innerHTML = ("add some more.");
-		document.getElementById("letsGrow").innerHTML = (uMessage);
 	}
 
 	// Registering Click Event on Button and Calling the Above Function.
