@@ -7,6 +7,7 @@ window.onload = function() {
 		document.getElementById("clickMe").id = "clicked";
 		document.getElementById("clicked").innerHTML = ("add some more.");
 		function letsCreate() {
+			uMessage = prompt("What would you like to add?")
 			var main = document.getElementById("text");
 			var newP = document.createElement("p");
 			newP.appendChild(document.createTextNode(uMessage));
