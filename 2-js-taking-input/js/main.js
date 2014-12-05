@@ -21,14 +21,4 @@ window.onload = function() {
 	var clickMe = document.getElementById("clickMe");
 	clickMe.addEventListener("click", letsChange);
 
-	// function letsCreate() {
-	// 	var main = document.getElementById("main");
-	// 	var newP = document.createElement("p");
-	// 	newP.appendChild(document.createTextNode(uMessage));
-	// 	main.appendChild(newP);
-	// }
-	//
-	// var clicked = document.getElementById("clicked");
-	// clicked.addEventListener("click", letsCreate);
-
 }
