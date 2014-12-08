@@ -20,5 +20,14 @@ window.onload = function() {
 	// Calling the function on Submit
 	storyForm.addEventListener("submit", addP);
 
-	// Reversing the order of Paragraphs
+	// Creating variable for reverse button.
+	var reverse = document.getElementById("clickMe");
+
+	// Function to reverse paragraph elements stored within storyLines array.
+	var reverseReverse = function() {
+
+	}
+
+	// Calling the function on Reverse, Reverse
+	reverse.addEvenetListner("click", reverseReverse)
 }
