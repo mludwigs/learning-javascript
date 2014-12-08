@@ -28,6 +28,12 @@ window.onload = function() {
 		while (storyText.firstChild) {
 			storyText.removeChild(storyText.firstChild);
 		};
+		storyLines.reverse();
+		for (var i = 0; i < storyLines.length; i++) {
+			var newP = document.createElement("p");
+			newP.innerHTML = storyLines[i];
+			storyText.appendChild(newP);
+		}
 	}
 
 	// Calling the function on Reverse, Reverse
