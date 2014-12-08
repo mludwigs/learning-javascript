@@ -17,14 +17,6 @@ window.onload = function() {
 		clicked.addEventListener("click", letsCreate);
 	}
 
-	function letsCreate() {
-		uMessage = prompt("What would you like to add?")
-		var main = document.getElementById("text");
-		var newP = document.createElement("p");
-		newP.appendChild(document.createTextNode(uMessage));
-		main.appendChild(newP);
-	}
-
 	// Registering Click Event Listener on Button and Calling the Above Function.
 	var clickMe = document.getElementById("clickMe");
 	clickMe.addEventListener("click", letsChange);
