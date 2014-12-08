@@ -1,5 +1,7 @@
+// Defining the storyLines array globally.
 var storyLines = [];
 
+// Forcing wait upon window load.
 window.onload = function() {
 
 	// Variable Declarations
