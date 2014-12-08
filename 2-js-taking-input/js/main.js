@@ -1,5 +1,10 @@
-// Defining the storyLines array globally.
 var storyLines = [];
+
+var createNewParagraph = function(paragraphHTML) {
+	var newP = document.createElement("p");
+	newP.innerHTML = paragraphHTML;
+	storyText.appendChild(newP);
+}
 
 // Forcing wait upon window load.
 window.onload = function() {
@@ -12,9 +17,7 @@ window.onload = function() {
 	// Function Declaration
 	var addP = function(e) {
 		e.preventDefault();
-		var newP = document.createElement("p");
-		newP.innerHTML = uInput.value
-		storyText.appendChild(newP);
+		createNewParagraph(uInput.value);
 		storyLines.push(uInput.value);
 		storyForm.reset();
 	};
@@ -32,9 +35,7 @@ window.onload = function() {
 		};
 		storyLines.reverse();
 		for (var i = 0; i < storyLines.length; i++) {
-			var newP = document.createElement("p");
-			newP.innerHTML = storyLines[i];
-			storyText.appendChild(newP);
+			createNewParagraph(storyLines[i]);
 		}
 	}
 
