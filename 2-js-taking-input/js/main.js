@@ -1,9 +1,10 @@
+var storyLines = [];
+
 window.onload = function() {
 
 	// Variable Declarations
 	var storyForm = document.getElementById("storyForm");
 	var uInput = document.getElementById("uInput");
-	var storyLines = [];
 
 	// Function Declaration
 	var addP = function(e) {
@@ -16,9 +17,8 @@ window.onload = function() {
 		storyForm.reset();
 	};
 
-	console.log(storyLines);
-
 	// Calling the function on Submit
 	storyForm.addEventListener("submit", addP);
 
+	// Reversing the order of Paragraphs
 }
