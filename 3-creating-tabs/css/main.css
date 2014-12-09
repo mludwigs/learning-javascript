@@ -46,7 +46,7 @@ span {
 #tabs li {
 	list-style: none;
 	float: left;
-	width: 10%;
+	width: 20%;
 }
 
 #tab-titles p {
@@ -74,11 +74,11 @@ span {
 }
 
 #tabs-content p {
-	margin-top: 120px;
+	margin-top: 160px;
 }
 
 #tabContent1 {
-	display: block;
+	display: none;
 }
 
 #tabContent2 {
