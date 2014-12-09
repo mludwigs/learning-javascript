@@ -39,6 +39,10 @@ span {
 	margin: 0px auto;
 }
 
+#tabs ul {
+	margin-left: -40px;
+}
+
 #tabs li {
 	list-style: none;
 	float: left;
@@ -46,12 +50,11 @@ span {
 }
 
 #tab-titles p {
-	display: block;
-	padding: 5px 0;
+	padding: 5px 0px;
 	font-size: 1.5em;
 	font-weight: 700;
 	text-align: center;
-	border: 2px solid #f5f5f5;
+	border: 1px solid #f5f5f5;
 	color: rgba(245,245,245,.5);
 }
 
@@ -66,14 +69,16 @@ span {
 
 #tabs-content {
 	width: 80%;
-	/*margin: 0px auto;*/
-	/*float: left;*/
-	display: inline-block;
+	margin: 0px auto;
+	text-align: left;
 }
 
-#tabs-content h1 {
-	/*width: 80%;*/
-	margin: 0px auto;
+#tabs-content p {
+	margin-top: 120px;
+}
+
+#inactive {
+	display: none;
 }
 
 /*~~~~~~~~~~~~~
