@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="blue" id="html">
+<html lang="en" id="html">
 	<head>
 		<!-- ### META ### -->
 		<meta charset="utf-8">
@@ -14,8 +14,6 @@
 		<!-- ### RESPONSIVE CSS ### -->
 		<link rel="stylesheet" href="css/responsive.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- ### EDITABLE JS/JQUERY INCLUDE ### -->
-		<script type="text/javascript" src="js/main.js"></script>
 		<!-- ### GOOGLE WEBFONT IMPORT ### -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 	</head>
@@ -23,5 +21,19 @@
 		<section id="main">
 			<h1>Learn about the things.</h1>
 		</section>
+		<section id="tabs">
+			<ul id="tab-titles">
+				<li><p id="tab1" class="active">Tab 1</p></li>
+				<li><p id="tab2">Tab 2</p></li>
+				<li><p id="tab3">Tab 3</p></li>
+			</ul>
+		</section>
+		<div id="tabs-content">
+			<p id="tabContent1">Tab 1 content.</p>
+			<p id="tabContent2">Tab 2 content.</p>
+			<p id="tabContent3">Tab 3 content.</p>
+		</div>
+	<!-- ### EDITABLE JS/JQUERY INCLUDE ### -->
+	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
