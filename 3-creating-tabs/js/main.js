@@ -17,12 +17,37 @@
     tabContent3 = document.getElementById("tabContent3");
   }
 
-  function showDialog() {
-    testEl.style.display = "block";
+  function tab1Click() {
+    tabContent2.style.display = "none";
+    tabContent3.style.display = "none";
+    tab2.className = "";
+    tab3.className = "";
+    tab1.className = "active";
+    tabContent1.style.display = "block";
+  }
+
+  function tab2Click() {
+    tabContent1.style.display = "none";
+    tabContent3.style.display = "none";
+    tab1.className = "";
+    tab3.className = "";
+    tab2.className = "active";
+    tabContent2.style.display = "block";
+  }
+
+  function tab3Click() {
+    tabContent1.style.display = "none";
+    tabContent2.style.display = "none";
+    tab1.className = "";
+    tab2.className = "";
+    tab3.className = "active";
+    tabContent3.style.display = "block";
   }
 
   function setPageEvents() {
-    tab1.addEventListener("click", )
+    tab1.addEventListener("click", tab1Click);
+    tab2.addEventListener("click", tab2Click);
+    tab3.addEventListener("click", tab3Click);
   }
 
   function runPageFunctions() {
