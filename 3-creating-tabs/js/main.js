@@ -1,5 +1,34 @@
 (function() {
 
+  
+
+  // function Tab(elemId) {
+  //   this.elemId = document.querySelector(elemId);
+  // }
+
+  // Tab.prototype = {
+
+  //   setName: function (name) {
+  //     this.name = name;
+  //   },
+
+  //   getName: function () {
+  //     return this.name;
+  //   }
+  // }
+
+  // var t1 = new Tab("#tab1");
+  // var t2 = new Tab("#tab2");
+
+  // console.log(t1.elemId);
+  // console.log(t2.elemId);
+
+  // t1.setName("Matt");
+  // t2.setName("Caleb");
+
+  // console.log(t1.getName());
+  // console.log(t2.getName());
+
   var
     tab1,
     tab2,
