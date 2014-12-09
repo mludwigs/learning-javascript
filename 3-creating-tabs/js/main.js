@@ -1,12 +1,20 @@
 (function() {
 
   var
-    testEl,
-    clickButton;
+    tab1,
+    tab2,
+    tab3,
+    tabContent1,
+    tabContent2,
+    tabContent3;
 
   function setPageVariables() {
-    testEl = document.getElementById("test");
-    clickButton = document.getElementById("clickBtn");
+    tab1 = document.getElementById("tab1");
+    tab2 = document.getElementById("tab2");
+    tab3 = document.getElementById("tab3");
+    tabContent1 = document.getElementById("tabContent1");
+    tabContent2 = document.getElementById("tabContent2");
+    tabContent3 = document.getElementById("tabContent3");
   }
 
   function showDialog() {
@@ -14,12 +22,12 @@
   }
 
   function setPageEvents() {
-    
+    tab1.addEventListener("click", )
   }
 
   function runPageFunctions() {
     setPageVariables();
-    setEvents();
+    setPageEvents();
   }
 
   window.addEventListener("load", runPageFunctions);
