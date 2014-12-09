@@ -1,3 +1,53 @@
 /*~~~~~~~~~~~~~
 ### GENERAL ###
 ~~~~~~~~~~~~~*/
+
+.blue {
+	background-color: #92B1CD;
+	height: 100vh;
+}
+
+#main {
+	width: 100%;
+	text-align: center;
+	margin: 0px auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: #f5f5f5;
+	margin-bottom: 5vh;
+	font-size: 6vw;
+	font-weight: 700;
+}
+
+p {
+	color: #f5f5f5;
+	margin-bottom: 5vh;
+	font-size: 2vw;
+	font-weight: 400;
+}
+
+form {
+	width: 40%;
+	margin: 0px auto;
+}
+
+input {
+	display: block;
+	margin-bottom: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 20px 5px 5px;
+	color: #231F20;
+}
+
+#clickMe {
+	margin-bottom: 33vh;
+	text-decoration: none;
+	color: #f5f5f5;
+	font-size: 1vw;
+	font-weight: 400;
+	padding: 5px 5px;
+	border: 1px solid #f5f5f5;
+}
