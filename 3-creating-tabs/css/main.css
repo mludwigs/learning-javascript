@@ -12,6 +12,7 @@ html {
 	text-align: center;
 	margin: 0px auto;
 	font-family: 'Roboto', sans-serif;
+	max-width: 80%;
 }
 
 h1 {

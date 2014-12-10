@@ -1,7 +1,6 @@
 (function() {
 
-  
-
+  // Matt's Code When Trying to Help:
   // function Tab(elemId) {
   //   this.elemId = document.querySelector(elemId);
   // }
