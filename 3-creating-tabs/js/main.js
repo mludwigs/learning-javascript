@@ -24,12 +24,36 @@
   }
 
   function tab1Click() {
-    tab1.className = "tab-titles active";
-    tabContent1.className = "tab-contents active";
+    tab1.classList.toggle("active");
+    tabContent1.classList.toggle("active");
+    tab2.classList.remove("active");
+    tabContent2.classList.remove("active");
+    tab3.classList.remove("active");
+    tabContent3.classList.remove("active");
+  }
+
+  function tab2Click() {
+    tab2.classList.toggle("active");
+    tabContent2.classList.toggle("active");
+    tab1.classList.remove("active");
+    tabContent1.classList.remove("active");
+    tab3.classList.remove("active");
+    tabContent3.classList.remove("active");
+  }
+
+  function tab3Click() {
+    tab3.classList.toggle("active");
+    tabContent3.classList.toggle("active");
+    tab1.classList.remove("active");
+    tabContent1.classList.remove("active");
+    tab2.classList.remove("active");
+    tabContent2.classList.remove("active");
   }
 
   function runPageEvents() {
     tab1.addEventListener("click", tab1Click);
+    tab2.addEventListener("click", tab2Click);
+    tab3.addEventListener("click", tab3Click);
   }
 
   function runPageFunctions() {
