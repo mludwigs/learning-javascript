@@ -10,6 +10,9 @@
     var tabContent1 = document.getElementById("tabContent1");
     var tabContent2 = document.getElementById("tabContent2");
     var tabContent3 = document.getElementById("tabContent3");
+    var uForm = document.getElementById("uForm");
+    var userTitle = document.getElementById("user-title");
+    var userContent = document.getElementById("user-content");
   }
 
   function setInitialValues() {
@@ -48,10 +51,33 @@
     tabContent2.classList.remove("active");
   }
 
+  // function addNewTabs() {
+
+  //   function createNewTab(pHTML) {
+  //     var newLi = document.createElement("li")
+  //     newLi.innerHTML = pHTML;
+  //     document.getElementById("tab-titles").appendChild(newLi);
+  //   }
+
+  //   function createNewTabContent(pHTML) {
+  //     var newP = document.createElement("p");
+  //     newP.innerHTML = pHTML;
+  //     document.getElementById("tabs-content").appendChild(newP);
+  //   }
+
+  //   function addTabs(e) {
+  //     e.preventDefault();
+  //     createNewTab(user-title.value);
+  //     createNewTabContent(user-content.value);
+  //     uForm.reset();
+  //   }
+  // }
+
   function runPageEvents() {
     tab1.addEventListener("click", tab1Click);
     tab2.addEventListener("click", tab2Click);
     tab3.addEventListener("click", tab3Click);
+    // uForm.addEventListener("submit", addNewTabs);
   }
 
   function runPageFunctions() {
