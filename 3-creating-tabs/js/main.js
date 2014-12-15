@@ -13,17 +13,16 @@
   }
 
   function setInitialValues() {
-    tab1 = tabTitles[0];
-    tabContent1 = tabContent[0];
-    tab2 = tabTitles[1];
-    tab2Content = tabContent[1];
-    tab3 = tabTitles[2];
-    tab3Content = tabContent[2];
+    tab1.innerHTML = tabTitles[0];
+    tabContent1.innerHTML = tabContent[0];
+    tab2.innerHTML = tabTitles[1];
+    tabContent2.innerHTML = tabContent[1];
+    tab3.innerHTML = tabTitles[2];
+    tabContent3.innerHTML = tabContent[2];
   }
 
   function runPageFunctions() {
     setPageVariables();
-    // setPageEvents();
     setInitialValues();
   }
 
