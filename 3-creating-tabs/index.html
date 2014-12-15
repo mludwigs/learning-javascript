@@ -23,16 +23,24 @@
 		</section>
 		<section id="tabs">
 			<ul id="tab-titles">
-				<li><p id="tab1">Tab 1</p></li>
-				<li><p id="tab2">Tab 2</p></li>
-				<li><p id="tab3">Tab 3</p></li>
+				<li><p id="tab1" class="tab-titles"></p></li>
+				<li><p id="tab2" class="tab-titles"></p></li>
+				<li><p id="tab3" class="tab-titles"></p></li>
 			</ul>
 		</section>
-		<div id="tabs-content">
-			<p id="tabContent1">Tab 1 content.</p>
-			<p id="tabContent2">Tab 2 content.</p>
-			<p id="tabContent3">Tab 3 content.</p>
-		</div>
+		<section id="tabs-content">
+			<p id="tabContent1" class="tab-contents"></p>
+			<p id="tabContent2" class="tab-contents"></p>
+			<p id="tabContent3" class="tab-contents"></p>
+		</section>
+		<section id="user-input">
+			<h2>Add Your Own Tab</h2>
+			<form id="uForm">
+				<input type="text" id="user-title" placeholder="New Tab Title">
+				<input type="text" id="user-content" placeholder="New Tab Content">
+				<input type="submit" value="Send it Over">
+			</form>
+		</section>
 	<!-- ### EDITABLE JS/JQUERY INCLUDE ### -->
 	<script type="text/javascript" src="js/main.js"></script>
 	</body>
