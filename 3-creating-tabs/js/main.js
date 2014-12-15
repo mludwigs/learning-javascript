@@ -1,5 +1,3 @@
-// Check this out for adding/removing class: https://developer.mozilla.org/en-US/docs/Web/API/Element.classList
-
 (function() {
 
   tabTitles = ["Tab 1", "Tab 2", "Tab 3"];
@@ -61,8 +59,6 @@
     setInitialValues();
     runPageEvents();
   }
-
-
 
   window.addEventListener("load", runPageFunctions);
 
