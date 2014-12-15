@@ -1,3 +1,5 @@
+// Check this out for adding/removing class: https://developer.mozilla.org/en-US/docs/Web/API/Element.classList
+
 (function() {
 
   tabTitles = ["Tab 1", "Tab 2", "Tab 3"];
@@ -21,10 +23,22 @@
     tabContent3.innerHTML = tabContent[2];
   }
 
+  function tab1Click() {
+    tab1.className = "tab-titles active";
+    tabContent1.className = "tab-contents active";
+  }
+
+  function runPageEvents() {
+    tab1.addEventListener("click", tab1Click);
+  }
+
   function runPageFunctions() {
     setPageVariables();
     setInitialValues();
+    runPageEvents();
   }
+
+
 
   window.addEventListener("load", runPageFunctions);
 

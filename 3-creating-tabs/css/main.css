@@ -63,11 +63,6 @@ span {
 	color: #f5f5f5;
 }
 
-.active {
-	background-color: #f5f5f5;
-	color: #7D3339 !important;
-}
-
 #tabs-content {
 	width: 80%;
 	margin: 0px auto;
@@ -88,6 +83,17 @@ span {
 
 #tabContent3 {
 	display: none;
+}
+
+/* ### Adding "active" capabilities for content and tab titles. ### */
+
+.tab-titles.active {
+	background-color: #f5f5f5;
+	color: #7D3339 !important;
+}
+
+.tab-contents.active {
+	display: block !important;
 }
 
 /*~~~~~~~~~~~~~
