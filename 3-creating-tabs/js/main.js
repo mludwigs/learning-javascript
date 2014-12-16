@@ -56,7 +56,11 @@
     e.preventDefault();
     tabTitles.push(userTitle.value);
     tabContent.push(userContent.value);
-
+    //Empties form input fields.
+    var newLI = document.createElement("li");
+    // newLI.className("tab-titles");
+    newLI.innerHTML = "<p>" + tabTitles[3] + "</p>";
+    document.getElementById("tab-titles").appendChild(newLI);
     uForm.reset();
   }
 
