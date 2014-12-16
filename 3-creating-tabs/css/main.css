@@ -106,7 +106,7 @@ h1, h2, p {
 
 /* ### Adding "active" capabilities for content and tab titles. ### */
 
-.tab-titles.active {
+#tab-titles .active {
 	background-color: #f5f5f5;
 	color: #7D3339 !important;
 }
