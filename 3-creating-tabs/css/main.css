@@ -41,6 +41,15 @@ span {
 	font-weight: 700;
 }
 
+h1, h2, p {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /*~~~~~~~~~~~~~
 ### Tab Table ###
 ~~~~~~~~~~~~~*/
@@ -111,7 +120,7 @@ span {
 ~~~~~~~~~~~~~*/
 
 #user-input {
-	padding-top: 80px;
+	padding-top: 100px;
 	width: 80%;
 	display: block;
 	margin: 0px auto;
@@ -129,19 +138,19 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 5px 20px 5px 5px;
-	color: #231F20;
+	color: #7D3339;
 }
 
-#clickMe {
-	margin-bottom: 33vh;
-	text-decoration: none;
+input[type="submit"] {
+	background-color: #f5f5f5;
+	color: #7D3339;
+	border: none;
+	padding: 5px 10px;
+	font-weight: 700;
+}
+
+input[type="submit"]:hover {
+	background-color: #7D3339;
 	color: #f5f5f5;
-	font-size: 1vw;
-	font-weight: 400;
-	padding: 5px 5px;
 	border: 1px solid #f5f5f5;
 }
-
-
-
-
