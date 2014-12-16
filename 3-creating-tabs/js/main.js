@@ -68,7 +68,6 @@
     var newP = document.createElement("p");
     newP.innerHTML = tabContent[currentContentPosition];
     document.getElementById("tabs-content").appendChild(newP);
-    uForm.reset();
   }
 
   function runPageEvents() {
