@@ -54,14 +54,20 @@
   function storeNewTabs(e) {
     //Prevents forced reload on form submit
     e.preventDefault();
+    //Add new tab title to tabTitles array and determine current position in array.
     tabTitles.push(userTitle.value);
-    var currentPlace = (tabTitles.length - 1);
+    var currentTitlePosition = (tabTitles.length - 1);
+    //Add new tab content to tabContent array and determine current position in array.
     tabContent.push(userContent.value);
+    var currentContentPosition = (tabContent.length - 1);
+    //Create new li for tab title.
     var newLI = document.createElement("li");
-    // newLI.className("tab-titles");
-    newLI.innerHTML = "<p>" + tabTitles[currentPlace] + "</p>";
+    newLI.innerHTML = "<p>" + tabTitles[currentTitlePosition] + "</p>";
     document.getElementById("tab-titles").appendChild(newLI);
-    uForm.reset();
+    //Create new p for tab content.
+    var newP = document.createElement("p");
+    newP.innerHTML = tabContent[currentContentPosition];
+    document.getElementById("tabs-content").appendChild(newP);
   }
 
   function runPageEvents() {
