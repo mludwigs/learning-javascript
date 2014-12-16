@@ -55,11 +55,11 @@
     //Prevents forced reload on form submit
     e.preventDefault();
     tabTitles.push(userTitle.value);
+    var currentPlace = (tabTitles.length - 1);
     tabContent.push(userContent.value);
-    //Empties form input fields.
     var newLI = document.createElement("li");
     // newLI.className("tab-titles");
-    newLI.innerHTML = "<p>" + tabTitles[3] + "</p>";
+    newLI.innerHTML = "<p>" + tabTitles[currentPlace] + "</p>";
     document.getElementById("tab-titles").appendChild(newLI);
     uForm.reset();
   }
