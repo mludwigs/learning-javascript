@@ -90,17 +90,6 @@ h1, h2, p {
 
 #tabs-content p {
 	margin-top: 160px;
-}
-
-#tabContent1 {
-	display: none;
-}
-
-#tabContent2 {
-	display: none;
-}
-
-#tabContent3 {
 	display: none;
 }
 
@@ -111,7 +100,7 @@ h1, h2, p {
 	color: #7D3339 !important;
 }
 
-.tab-contents.active {
+#tabs-content .active {
 	display: block !important;
 }
 
