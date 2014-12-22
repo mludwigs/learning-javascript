@@ -82,13 +82,13 @@ h1, h2, p {
 	color: #f5f5f5;
 }
 
-#tab-content {
+#tab-contents {
 	width: 80%;
 	margin: 0px auto;
 	text-align: left;
 }
 
-#tab-content p {
+#tab-contents p {
 	margin-top: 160px;
 	display: none;
 }
@@ -101,7 +101,7 @@ h1, h2, p {
 	color: #7D3339 !important;
 } 
 
-#tab-content .active {
+#tab-contents .active {
 	display: block !important;
 }
 
