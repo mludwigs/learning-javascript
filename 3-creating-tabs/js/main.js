@@ -1,7 +1,69 @@
 (function() {
 
-  tabTitles = ["Tab 1", "Tab 2", "Tab 3"];
-  tabContent = ["First Tab", "Second Tab", "Third Tab"];
+  var tabTitles = ["Tab 1", "Tab 2", "Tab 3"],
+      tabContent = ["First Tab", "Second Tab", "Third Tab"],
+      activeElem;
+
+  var config = {
+    tab1: document.getElementById("tab1"),
+    tab2: document.getElementById("tab2"),
+    tabContent1: document.getElementById("tabContent1"),
+    tabContent2: document.getElementById("tabContent2"),
+    uForm: document.getElementById("uForm"),
+    userTitle: document.getElementById("user-title"),
+    userContent: document.getElementById("user-content"),
+    tabContent: document.getElementById("tabs-content"),
+    tabTitles: document.getElementById("tab-titles")
+  }
+
+  function createTab(e) {
+    e.preventDefault();
+    var title = config.userTitle.value,
+        content = config.userContent.value,
+        newLI = document.createElement("li"),
+        newP = document.createElement("p");
+
+    newLI.innerHTML = "<p id=" + title + ">" + title + "</p>";
+    config[title] = newLI;
+    newP.innerHTML = content;
+    config[content] = newP;
+
+    document.getElementById("tabs-content").appendChild(newP);
+    document.getElementById("tab-titles").appendChild(newLI);
+
+    tabClick(newLI, newP);
+  }
+
+  function tabClick(tabElem, contentElem) {
+    tabElem.addEventListener("click", function () {
+      var contentChildern = config.tabContent.childNodes,
+          titleChildern = config.tabTitles.childNodes;
+
+      removeActive(contentChildern);
+      setActiveTab(tabElem);
+      contentElem.classList.toggle("active");
+    });
+  }
+
+  function setActiveTab(elem) {
+    if (activeElem) {
+      activeElem.classList.remove("active");
+    }
+    elem.classList.add("active");
+    activeElem = elem;
+  }
+
+  function removeActive(childenArray) {
+    var i;
+    for (i = 0; i < childenArray.length; i++) {
+      var classList = childenArray[i].classList;
+      if (classList) {
+        if (classList.contains("active")) {
+          classList.remove("active");
+        }
+      }
+    };
+  }
 
   function setPageVariables() {
     var tab1 = document.getElementById("tab1");
@@ -31,6 +93,7 @@
     tabContent2.classList.remove("active");
     tab3.classList.remove("active");
     tabContent3.classList.remove("active");
+    setActiveTab(config.tab1);
   }
 
   function tab2Click() {
@@ -40,6 +103,8 @@
     tabContent1.classList.remove("active");
     tab3.classList.remove("active");
     tabContent3.classList.remove("active");
+
+    setActiveTab(config.tab2);
   }
 
   function tab3Click() {
@@ -49,6 +114,8 @@
     tabContent1.classList.remove("active");
     tab2.classList.remove("active");
     tabContent2.classList.remove("active");
+
+    setActiveTab(tab3);
   }
 
   function storeNewTabs(e) {
@@ -76,7 +143,7 @@
     tab2.addEventListener("click", tab2Click);
     tab3.addEventListener("click", tab3Click);
     // Function call on submit
-    uForm.addEventListener("submit", storeNewTabs);
+   uForm.addEventListener("submit", createTab);
   }
 
   function runPageFunctions() {
