@@ -135,6 +135,8 @@ input[type="submit"] {
 	border: none;
 	padding: 5px 10px;
 	font-weight: 700;
+	// Remember how to do this.
+	transition: background-color .25s, color .25s;
 }
 
 input[type="submit"]:hover {
