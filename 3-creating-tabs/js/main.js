@@ -143,7 +143,7 @@
     tab2.addEventListener("click", tab2Click);
     tab3.addEventListener("click", tab3Click);
     // Function call on submit
-   uForm.addEventListener("submit", createTab);
+    uForm.addEventListener("submit", createTab);
   }
 
   function runPageFunctions() {
