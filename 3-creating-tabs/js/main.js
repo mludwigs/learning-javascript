@@ -32,7 +32,7 @@
       if (this.currentTab) {
         this.currentTab.removeActive();
       }
-      newCurrentTab.__proto__.setActive();
+      newCurrentTab.__proto__.setActive(); // Want to delete this line to get it to worrk
       console.log(newCurrentTab);
       this.currentTab = newCurrentTab;
     },
