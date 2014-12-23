@@ -132,12 +132,12 @@ input {
 input[type="submit"] {
 	background-color: #f5f5f5;
 	color: #7D3339;
-	border: none;
+	border: 1px solid #7D3339;
 	padding: 5px 10px;
 	border-radius: 25px;
 	font-weight: 700;
-	/*Remember how to do this.*/
-	transition: background-color .25s, color .25s;
+	/* ### CSS TRANSITIONS: Apply transitions between original and over state on the ORIGINAL CSS property, and include the property that you are applying the transition on, as well as the time limit for the transition in seconds. ### */
+	transition: background-color .3s, color .3s;
 }
 
 input[type="submit"]:hover {
