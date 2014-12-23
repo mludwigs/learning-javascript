@@ -3,7 +3,7 @@
 (function() {
 
   var tabClick = new CustomEvent("tabClicked", {"detail": "hello"});
-
+  
   var config = [
     {
       id: "#tab1",
@@ -21,16 +21,12 @@
       for (i = 0; i < config.length; i++) {
         new Tab(config[i].id, config[i].isActive);
       }
-    }
-    
+    }  
     this.options = optionsObj;
-
     this.init();
-
   }
 
   TabManager.prototype = {
-
   }
 
   function Tab(id, isActive) {
@@ -43,7 +39,7 @@
     this.init();
   }
 
-  // Tab is a Class
+  // Defining Tab as a class.
   Tab.prototype = {
     isClicked: function() {
       this.elem.addEventListener("click", function(){
